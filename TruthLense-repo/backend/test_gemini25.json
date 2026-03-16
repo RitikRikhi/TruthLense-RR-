@@ -1,0 +1,29 @@
+{
+  "id": null,
+  "claim": "Drinking industrial bleach and injecting disinfectants is a proven cure for the COVID-19 virus.",
+  "credibility_score": 35,
+  "prediction": "Potentially Misleading",
+  "verdict": "Potentially Misleading",
+  "confidence": 79,
+  "explanation": [
+    "Free API could not verify public encyclopedia records for these entities.",
+    "No major suspicious patterns detected via public open data."
+  ],
+  "sources": [],
+  "wiki_context": null,
+  "rag_score": 50,
+  "rag_explanation": "Found similar facts, but Gemini Generation failed or is disabled.",
+  "retrieved_facts": [
+    "Python was created by Guido van Rossum and first released in 1991.",
+    "Python was created by Guido van Rossum and first released in 1991.",
+    "Python was created by Guido van Rossum and first released in 1991."
+  ],
+  "powered_by": {
+    "ml_model": "DistilBERT + SHAP",
+    "rag": "ChromaDB + RAG",
+    "gemini": "ML Fallback",
+    "news": "Unavailable",
+    "wikipedia": "No match found",
+    "source_scoring": "Deterministic domain hash"
+  }
+}

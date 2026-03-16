@@ -1,0 +1,14 @@
+{
+  "expl": [
+    "Free API could not verify public encyclopedia records for these entities.",
+    "No major suspicious patterns detected via public open data."
+  ],
+  "pow": {
+    "ml_model": "DistilBERT + SHAP",
+    "rag": "ChromaDB + RAG",
+    "gemini": "ML Fallback",
+    "news": "Unavailable",
+    "wikipedia": "No match found",
+    "source_scoring": "Deterministic domain hash"
+  }
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TruthLense · Misinformation Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div class="logo-circle">TL</div>
+        <div>
+          <h1>TruthLense</h1>
+          <p class="subtitle">AI-powered claim analysis and misinformation detection</p>
+        </div>
+      </header>
+
+      <main class="app-main">
+        <section class="card input-card">
+          <h2>Analyze a claim</h2>
+          <p class="hint">Paste any statement, headline, or social post. TruthLense will check it using news, Wikipedia, and AI.</p>
+
+          <label for="claim-input" class="field-label">Claim or statement</label>
+          <textarea
+            id="claim-input"
+            class="claim-input"
+            rows="4"
+            placeholder="Example: &quot;Drinking bleach cures COVID-19.&quot;"
+          ></textarea>
+
+          <div class="actions">
+            <button id="analyze-btn" class="primary-btn">Analyze claim</button>
+            <span id="status-text" class="status-text"></span>
+          </div>
+        </section>
+
+        <section class="results-grid">
+          <article class="card score-card" id="score-card">
+            <h2>Verdict</h2>
+            <div class="score-row">
+              <div class="score-badge" id="score-badge">–</div>
+              <div>
+                <div class="verdict" id="verdict-text">No analysis yet</div>
+                <div class="score-caption" id="score-caption">
+                  Run an analysis to see credibility score and confidence.
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card explanation-card">
+            <h2>Why this verdict?</h2>
+            <ul id="explanation-list" class="bullets">
+              <li class="muted">Explanations will appear here after analysis.</li>
+            </ul>
+          </article>
+
+          <article class="card sources-card">
+            <h2>Evidence & sources</h2>
+            <ul id="sources-list" class="sources-list">
+              <li class="muted">Relevant news and knowledge sources will be listed here.</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <span>Built for the TruthLense hackathon project.</span>
+        <span class="dot">•</span>
+        <span>Backend: Node.js + Python + Gemini + NewsAPI</span>
+      </footer>
+    </div>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+  </html>
+
