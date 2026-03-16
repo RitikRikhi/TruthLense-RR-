@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs
+*.log
+out.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Project Specific
+data/chromadb/
+model/saved_model/
+!model/saved_model/.gitkeep

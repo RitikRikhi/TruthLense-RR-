@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+torch
+transformers
+scikit-learn
+pandas
+python-dotenv
+shap
+chromadb
+sentence-transformers
